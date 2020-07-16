@@ -3,167 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Link -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome Script -->
     <script
       src="https://kit.fontawesome.com/19145560cd.js"
       crossorigin="anonymous"
     ></script>
-    <title>나이키 Just Do It</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/19145560cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- NAVBAR -->
     <nav>
-      <a href="#" id="logo"><img src="images/logo.png" height="50px" /></a>
-      <ul class="top_menu">
+      <!-- 로고 -->
+      <a class="navbar__logo" href=""
+        ><img src="images/logo_tc_black.png" height="20px" alt="" />
+      </a>
+
+      <!-- 리스트 메뉴 -->
+      <ul class="navbar__menu">
         <li>
-          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="">메뉴1</a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="">메뉴2</a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-bars"></i></a>
+          <a href="">메뉴3</a>
         </li>
       </ul>
+      <!-- 검색창 -->
+      <input class="navbar__search" type="text" placeholder="Search" />
+      <!-- 햄버거 메뉴 -->
+      <a class="navbar__toggleBtn" href="#"><i class="fas fa-bars"></i></a>
     </nav>
-    <!-- HERO POST -->
-    <div class="main__hero">
-      <div class="main__hero cont1">
-        <a class="image_wrap" href="#"><img src="images/img01.jpg" /></a>
-        <div class="info_wrap">
-          <h3>나이키 요가 컬렉션</h3>
-          <h4>
-            나이키 요가 컬렉션과 함께 <br class="mobile-only" />
-            당신만의 움직임을 시작해보세요.
-          </h4>
-          <div class="main_btn">
-            <a href="#">구매하기</a>
-          </div>
-        </div>
-      </div>
-      <div class="main__hero cont2"></div>
-      <div class="main__hero cont3"></div>
-    </div>
-    <!-- FLOAT POST -->
-    <div class="main__float">
-      <div class="title"><h2>Trending Now</h2></div>
-      <div class="main__float cont">
-        <a class="image_wrap" href="#"><img src="images/float01.jpg" /></a>
-        <div class="info_wrap">
-          <h4>
-            썸머 에센셜
-          </h4>
-          <div class="main_btn">
-            <a href="#">구매하기</a>
-          </div>
-        </div>
-      </div>
-      <div class="main__float cont">
-        <a class="image_wrap" href="#"><img src="images/float02.jpg" /></a>
-        <div class="info_wrap">
-          <h4>
-            썸머 에센셜
-          </h4>
-          <div class="main_btn">
-            <a href="#">구매하기</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="floatfixer"></div>
-    <!-- CAROUSELS -->
-    <div class="main__carousels">
-      <div class="title"><h2>Featured Item</h2></div>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#">
-              <img
-                src="images/car01.jpeg"
-                class="d-block w-100"
-                alt="설명"
-                width="300px"
-                height="300px"
-              />
-              <div class="product_wrap">
-                <h4>나이키 여성 팬츠 1</h4>
-                <p>79,000원</p>
-              </div>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img
-                src="images/car02.jpeg"
-                class="d-block w-100"
-                alt="설명"
-                width="300px"
-                height="300px"
-              />
-              <div class="product_wrap">
-                <h4>나이키 여성 팬츠 2</h4>
-                <p>79,000원</p>
-              </div>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"
-              ><img
-                src="images/car03.jpeg"
-                class="d-block w-100"
-                alt="설명"
-                width="300px"
-                height="300px"
-              />
-              <div class="product_wrap">
-                <h4>나이키 여성 팬츠 3</h4>
-                <p>79,000원</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- FOOTER -->
+    <!-- 히어로 영역 -->
+    <div class="main__hero">
+      <div class="title_wrapper">
+        <h1>히어로 제목</h1>
+        <h4>짧은 내용이 들어있습니다.</h4>
+      </div>
+    </div>
+    <!-- 메인 콘테이너 분리형 -->
+    <section class="separ-container">
+      <!-- separ 1 -->
+      <h2>최신 아티클</h2>
+      <div class="main__separ">
+        <div class="img_wrapper">
+          <a href="#"><img src="images/con_img1.jpg" alt="" /></a>
+        </div>
+        <div class="info_wrapper">
+          <h3>짧은 제목</h3>
+          <h4>여기에 정보가 들어있습니다.</h4>
+          <div class="info_btn">
+            <a href="#">
+              더 보기
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- separ 2 -->
+      <div class="main__separ">
+        <div class="img_wrapper">
+          <a href="#"><img src="images/con_img2.jpg" alt="" /></a>
+        </div>
+        <div class="info_wrapper">
+          <h3>짧은 제목</h3>
+          <h4>여기에 정보가 들어있습니다.</h4>
+          <div class="info_btn">
+            <a href="">
+              더 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="mobile-only" />
+    <!-- 메인 콘테이너 오버레이형 -->
+    <section class="overlay-container">
+      <h2>최신 아티클</h2>
+      <!-- overlay 1 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img3.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay 2 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img4.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay 3 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img5.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay 4 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img6.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay 5 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img7.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay 6 -->
+      <div class="main__overlay">
+        <div class="hover_area">
+          <div class="img_wrapper">
+            <a href="#"><img src="images/con_img8.jpg" alt="" /></a>
+          </div>
+          <div class="info_wrapper">
+            <h3>짧은 제목</h3>
+            <h4>여기에 정보가 들어있습니다.</h4>
+            <div class="info_btn">
+              <a href="">
+                더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 영역 -->
     <footer>
-      <div class="footer_wrap">
-        <div class="company1">
+      <div class="ft_title">
+        <h2>Travel<b>Com</b></h2>
+      </div>
+      <div class="ft_col_wrapper">
+        <div class="col1">
           <dl>
-            <dt>고객센터</dt>
-            <dd>080-123-4567</dd>
-            <dd><a href="#">주문/결제</a></dd>
-            <dd><a href="#">주문배송조회</a></dd>
+            <dt>푸터 제목1</dt>
+            <dd><a href="#">푸터 내용</a></dd>
+            <dd><a href="#">푸터 내용</a></dd>
+            <dd><a href="#">푸터 내용</a></dd>
           </dl>
         </div>
-        <div class="company2">
+        <div class="col2">
           <dl>
-            <dt>ABOUT NIKE</dt>
-            <dd><a href="#">나이키에 대하여</a></dd>
+            <dt>푸터 제목2</dt>
+            <dd><a href="#">푸터 내용</a></dd>
+            <dd><a href="#">푸터 내용</a></dd>
+            <dd><a href="#">푸터 내용</a></dd>
           </dl>
         </div>
-        <div class="company3">
+        <div class="col3">
           <dl>
-            <dt>SOCIAL</dt>
-            <dd>
-              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-            </dd>
+            <dt>푸터 제목3</dt>
             <dd>
               <a href="https://twitter.com"
                 ><i class="fab fa-twitter-square"></i
@@ -174,33 +228,23 @@
                 ><i class="fab fa-instagram-square"></i
               ></a>
             </dd>
+            <dd>
+              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            </dd>
           </dl>
         </div>
       </div>
-      <div class="footer taa01">
-        ⓒ 2019 Nike, Inc. All Rights Reserved
-      </div>
-      <div class="footer taa02">
-        <span><a href="#">이용약관</a></span>
-        <span><a href="#">개인정보처리방침</a></span>
+      <div class="ft_taa_wrapper">
+        <div class="taa1">
+          <span>ⓒ 2019 TravelCom, Inc. All Rights Reserved</span>
+        </div>
+        <div class="taa2">
+          <span>회사소개</span>
+          <span>고객센터</span>
+          <span>이용약관</span>
+          <span>개인정보처리방침</span>
+        </div>
       </div>
     </footer>
-
-    <!-- Bootstrap Script-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
